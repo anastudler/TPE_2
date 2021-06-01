@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", iniciarPagina);
 function iniciarPagina() {
   "use strict";
 
-  document
-    .querySelector("#btn_agregar")
-    .addEventListener("click", agregarLibro);
+  document.querySelector("#btn_agregar").addEventListener("click", agregarLibro);
   document.querySelector("#btn_agregar3").addEventListener("click", agregar3);
   document.querySelector("#btn_vaciar").addEventListener("click", vaciarTabla);
 
@@ -15,7 +13,7 @@ function iniciarPagina() {
     {
       titulo: "El Psicoanalista",
       genero: "Thriller",
-      autor: "John Katzenbach",
+      autor: "John Katzenbach" /*  */,
     },
     {
       titulo: "Harry Potter y la Piedra Filosofal",
@@ -23,9 +21,9 @@ function iniciarPagina() {
       autor: "J.K. Rowling",
     },
     {
-        titulo: "Asesinato en el Orient Express",
-        genero: "Policial",
-        autor: "Agatha Christie",
+      titulo: "Asesinato en el Orient Express",
+      genero: "Policial",
+      autor: "Agatha Christie",
     },
   ];
 
