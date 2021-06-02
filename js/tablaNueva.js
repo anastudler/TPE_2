@@ -13,7 +13,7 @@ function iniciarPagina() {
     {
       titulo: "El Psicoanalista",
       genero: "Thriller",
-      autor: "John Katzenbach" /*  */,
+      autor: "John Katzenbach",
     },
     {
       titulo: "Harry Potter y la Piedra Filosofal",
@@ -52,22 +52,19 @@ function iniciarPagina() {
     tabla.innerHTML = "";
 
     for (const item of libros) {
-      tabla.innerHTML +=
-        "<tr>" +
-        "<td>" +
-        item.titulo +
-        "</td>" +
-        "<td>" +
-        item.genero +
-        "</td>" +
-        "<td>" +
-        item.autor +
-        "</td>" +
-        "</tr>";
+      tabla.innerHTML += "<tr>" + "<td>" + item.titulo + "</td>" + "<td>" + item.genero + "</td>" + "<td>" + item.autor + "</td>" + "</tr>";
     }
   }
 
-  function agregar3() {}
+  function agregar3() {
+    for (let i = 0; i < 3; i++) {
+      const librosPrecargados = libros[i];
+      console.table(librosPrecargados);
+
+      libros.push(librosPrecargados);
+      mostrar(libros);
+    }
+  }
 
   function vaciarTabla() {
     libros = [];
