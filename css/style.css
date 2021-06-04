@@ -9,11 +9,12 @@ body {
 }
 
 .logo {
-    width: 20%;
+    width: 100%;
 
 }
 
 .btn_menu {
+    background-color: #67ce92bd;
     color: white;
     padding: 15px;
 }
@@ -24,11 +25,11 @@ body {
 }
 
 .menu {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #67ce92bd;
+
     list-style: none;
     padding: 10px;
+    display: none;
+    flex-direction: column;
 }
 
 .menu li a {
@@ -37,6 +38,10 @@ body {
     text-transform: uppercase;
     text-decoration-line: none;
     padding: 5px;
+}
+
+ul.menu.show {
+    display: flex;
 }
 
 .menu li:hover {
@@ -69,27 +74,45 @@ table {
     width: 100%;
 }
 
+
 .contenedor-formulario {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
-.captcha {
-    padding-top: 2%;
-    padding-bottom: 2%;
+.formulario {
+    display: grid;
+    grid-template-areas:
+        "nombre"
+        "apellido"
+        "mail"
+        "captcha"
+        "ingresarCaptcha";
 }
+
+
+
 
 @media only screen and (min-width: 600px) {
+
+    .logo {
+        width: 20%;
+
+    }
 
     .btn_menu {
         display: none;
     }
 
     .menu {
+        background-color: #67ce92bd;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+
     }
+
+
 }

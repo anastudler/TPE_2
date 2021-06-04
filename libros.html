@@ -15,6 +15,7 @@
         </figure>
         <h1>Biblioteca Popular de Tandil</h1>
       </div>
+      <div class="btn_menu"><a>Menú</a></div>
       <nav>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
@@ -48,29 +49,26 @@
           <th>Genero</th>
           <th>Autor</th>
         </thead>
-        <tbody id="tabla_libros">
-          
-        </tbody>
-       
+        <tbody id="tabla_libros"></tbody>
       </table>
     </section>
     <div>
-      <form action="">
-        <input type="text" name="titulo" id="titulo">
-        <input type="text" name="genero" id="genero">
-        <input type="text" name="autor" id="autor">
-        <button type="button" id="btn_agregar">Agregar</button>
-        <button type="button"  id="btn_agregar3">Agregar 3</button>
-        <button type="button" id="btn_vaciar">Vaciar Tabla</button>
+      <form action="" id="form_libros">
+        <input type="text" name="titulo" placeholder="Titulo" required/>
+        <input type="text" name="genero" placeholder="Genero" required/>
+        <input type="text" name="autor" placeholder="Autor" required/>
+        <div>
+          <button>Agregar</button>
+          <button id="btn_agregar3">Agregar 3</button>
+          <button id="btn_vaciar">Vaciar Tabla</button>
+        </div>
       </form>
     </div>
     <footer>
       <p>Biblioteca Popular de Tandil - 2021</p>
     </footer>
 
-   
+    <script text="text/javascript" src="js/menuResponsive.js"></script>
     <script text="text/javascript" src="js/tablaNueva.js"></script>
- 
   </body>
-
 </html>
